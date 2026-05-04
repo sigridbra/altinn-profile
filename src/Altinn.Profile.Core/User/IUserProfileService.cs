@@ -27,8 +27,8 @@ public interface IUserProfileService
     /// <summary>
     /// Method that fetches a user based on a user uuid
     /// </summary>
-    /// <param name="userUuid">The user uuid</param>
-    /// <param name="cancellationToken">The cancellation token</param>
+    /// <param name="userUuid">The user uuid.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>User profile with given user uuid or a boolean if failure.</returns>
     Task<Result<UserProfile, bool>> GetUserByUuid(Guid userUuid, CancellationToken cancellationToken);
 
